@@ -1,0 +1,16 @@
+#keys_container {
+  width: min(340px, 100%);
+  display: grid;
+  margin: auto;
+  direction: rtl;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+  height: 4em;
+}
+
+button[data-input="0"] {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
