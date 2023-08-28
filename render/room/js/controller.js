@@ -1,5 +1,9 @@
 const keys_container = document.getElementById("keys_container");
 
+const audio = new Audio();
+
+audio.src("/media/click.mp3");
+
 addBtn("backspace", document.getElementById("backspace_container"));
 
 for (let i = 0; i < 10; i++) {
@@ -18,6 +22,7 @@ function addBtn(id, container = keys_container) {
 
   btn.addEventListener("click", (_) => {
     socket.emit("add text", id);
+    audio.play();
   });
 
   container.appendChild(btn);

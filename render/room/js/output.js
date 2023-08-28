@@ -1,9 +1,4 @@
-const audio = new Audio();
-
-audio.src("/media/click.mp3");
-
 socket.on("add text", (i) => {
-  audio.play();
   switch (i) {
     case "backspace":
       document.body.removeChild(document.body.lastElementChild);
