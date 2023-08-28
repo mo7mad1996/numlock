@@ -12,7 +12,6 @@ section {
   height: 100vh;
   padding: 60px;
 }
-
 .land {
   font-family: "Abril Fatface", cursive;
   background-image: url("/imgs/9.jpg"), linear-gradient(30deg, #64046f, #65046e);
@@ -25,6 +24,7 @@ section {
   font-size: 5em;
   color: #d52cb1;
 }
+
 .land h1::after {
   content: "";
   height: 4px;
@@ -111,8 +111,21 @@ section {
   #get_started .content {
     flex-direction: column;
   }
-}
 
+  section {
+    padding: 10px;
+    background-position: center;
+  }
+  .land h1 {
+    font-size: 2em;
+  }
+  .land p {
+    font-size: 1em;
+  }
+  #get_started img {
+    width: 60%;
+  }
+}
 .or {
   height: 0;
   display: flex;
