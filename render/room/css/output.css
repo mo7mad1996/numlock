@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 25px;
+  background-color: #f3f3e8;
+  user-select: contain;
+}
+p {
+  user-select: contain;
+  padding: 2em 3em;
+  color: #5f4a28;
+}
+
+button {
+  border: none;
+  margin: 2em auto;
+  border-radius: 5px;
+  border: 2px solid #3333;
+  display: block;
+  padding: 5px 10px;
+  transition: 100ms;
+  background: white;
+  cursor: pointer;
+}
+img {
+  display: inline-block;
+  margin: auto;
+  height: 3em;
+
+  backface-visibility: hidden;
+}
+
+img.reverce {
+  display: none;
+}
+
+.copy img {
+  display: none;
+}
+
+.copy .reverce {
+  display: block;
+}

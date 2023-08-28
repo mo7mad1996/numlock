@@ -8,9 +8,6 @@ for (let i = 0; i < 10; i++) {
 addBtn(".");
 
 function addBtn(id, container = keys_container) {
-  const audio = new Audio();
-
-  audio.setAttribute("src", "/media/click.mp3");
   const btn = document.createElement("button");
 
   btn.innerText = id;
@@ -21,7 +18,6 @@ function addBtn(id, container = keys_container) {
 
   btn.addEventListener("click", (_) => {
     socket.emit("add text", id);
-    audio.play();
   });
 
   container.appendChild(btn);

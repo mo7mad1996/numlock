@@ -7,14 +7,66 @@
     <script src="node_modules/html5-qrcode/html5-qrcode.min.js"></script>
     <script src="node_modules/axios/dist/axios.min.js"></script>
     <script src="node_modules/socket.io/client-dist/socket.io.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Jost:ital,wght@1,300&family=Teko&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/room/css/land.css" />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <section class="land">
+      <div class="content">
+        <h1>Numlock Keyboard</h1>
+        <p>
+          This site is simple.<br />
+          Specialized in devices that do not contain numbers in the keyboard.<br />
+          By using your phone, you can turn it into a number pad and benefit
+          from it.<br />
+          Free forever.<br />
+        </p>
 
-    <div id="img_container"></div>
+        <a href="#get_started" class="button-52">start now</a>
+      </div>
+    </section>
 
-    <div id="reader"></div>
+    <section id="get_started">
+      <div class="content">
+        <p>
+          Open your phone go to { <span id="url"></span> }<br />
 
+          Start scan this QRcode.<br />
+          Enjoy ☺☺
+        </p>
+        <div id="img_container"></div>
+      </div>
+    </section>
+    <span class="or">OR</span>
+    <section class="last">
+      <p>if you use your phone start scan now.</p>
+      <div id="reader"></div>
+    </section>
+
+    <section class="l2023">
+      <p>
+        this site one of made by
+        <a href="http://portfolio-mohamed-ibrahim.onrender.com/"
+          >Mohamed Ibrahim</a
+        >
+        with love 😍.<br />
+        The site was established in 2023.
+      </p>
+    </section>
+
+    <footer>
+      &copy; All rights are save...
+      <a href="http://portfolio-mohamed-ibrahim.onrender.com/"
+        >Mohamed Ibrahim</a
+      >
+    </footer>
     <script src="./js/socket.io.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/scan.js"></script>

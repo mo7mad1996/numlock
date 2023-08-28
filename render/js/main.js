@@ -13,3 +13,5 @@ axios
     socket.emit("join room", room);
   })
   .catch((err) => console.log(err));
+
+document.getElementById("url").innerHTML = location.hostname;
