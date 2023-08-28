@@ -2,7 +2,7 @@ const keys_container = document.getElementById("keys_container");
 
 const audio = new Audio();
 
-audio.src("/media/click.mp3");
+audio.setAttribute("src", "/media/click.mp3");
 
 addBtn("backspace", document.getElementById("backspace_container"));
 
