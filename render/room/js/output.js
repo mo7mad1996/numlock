@@ -4,7 +4,7 @@ const button = document.querySelector("button");
 socket.on("add text", (i) => {
   switch (i) {
     case "backspace":
-      container.removeChild(document.body.lastElementChild);
+      container.removeChild(container.lastElementChild);
       break;
     default:
       const span = document.createElement("span");
@@ -16,9 +16,10 @@ socket.on("add text", (i) => {
 
 document.body.addEventListener("copy", (e) => console.log(e));
 
-button.addEventListener("click", (e) => {
+button.addEventListener("click", cop);
+function cop() {
   let text = container.innerText;
   button.classList.add("copy");
   navigator.clipboard.writeText(text);
-  setTimeout(() => button.classList.remove("copy"), 1000);
-});
+  setTimeout(() => button.classList.remove("copy"), 2000);
+}
