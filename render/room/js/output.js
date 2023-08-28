@@ -1,4 +1,4 @@
-const audio = document.createElement("audio");
+const audio = new Audio();
 
 audio.src("/media/click.mp3");
 
