@@ -1,17 +1,24 @@
 const keys_container = document.getElementById("keys_container");
 
+addBtn("backspace", document.getElementById("backspace_container"));
+
 for (let i = 0; i < 10; i++) {
+  addBtn(i);
+}
+addBtn(".");
+
+function addBtn(id, container = keys_container) {
   const btn = document.createElement("button");
 
-  btn.innerText = i;
-  btn.setAttribute("data-input", i);
+  btn.innerText = id;
+  btn.setAttribute("data-input", id);
   btn.setAttribute("class", "key");
 
-  btn.style.order = 10 - i;
+  btn.style.order = 1 - id;
 
   btn.addEventListener("click", (_) => {
-    socket.emit("add text", i);
+    socket.emit("add text", id);
   });
 
-  keys_container.appendChild(btn);
+  container.appendChild(btn);
 }

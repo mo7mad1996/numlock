@@ -1,16 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Phudu&display=swap");
+
+:root {
+  --gap: 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#backspace_container,
 #keys_container {
   width: min(340px, 100%);
   display: grid;
   margin: auto;
   direction: rtl;
   grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+body {
+  height: 100vh;
+  max-height: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  font-family: "Phudu", cursive;
+  background-color: #4d4d4d;
+}
+
+#backspace_container {
+  flex: 1;
+}
+#keys_container {
+  flex: 4;
 }
 
 button {
-  height: 4em;
+  background-color: #222;
+  border-radius: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  outline: none;
+  user-select: none;
+  touch-action: manipulation;
+  font-family: inherit;
+  box-shadow: #76767a71 0px 30px 60px -12px inset,
+    #76767a71 0px 12px 12px -18px inset, rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.4) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.4) 0px 32px 64px;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.75;
 }
 
 button[data-input="0"] {
   grid-column-start: 2;
+  grid-column-end: 4;
+}
+button[data-input="backspace"] {
+  grid-column-start: 1;
   grid-column-end: 4;
 }
