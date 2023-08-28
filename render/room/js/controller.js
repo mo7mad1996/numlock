@@ -1,9 +1,5 @@
 const keys_container = document.getElementById("keys_container");
 
-const audio = new Audio();
-
-audio.setAttribute("src", "/media/click.mp3");
-
 addBtn("backspace", document.getElementById("backspace_container"));
 
 for (let i = 0; i < 10; i++) {
@@ -12,6 +8,9 @@ for (let i = 0; i < 10; i++) {
 addBtn(".");
 
 function addBtn(id, container = keys_container) {
+  const audio = new Audio();
+
+  audio.setAttribute("src", "/media/click.mp3");
   const btn = document.createElement("button");
 
   btn.innerText = id;
