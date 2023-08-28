@@ -106,28 +106,6 @@ section {
 #get_started img {
   width: 40%;
 }
-
-@media (max-width: 480px) {
-  #get_started .content {
-    flex-direction: column;
-  }
-
-  section {
-    padding: 10px;
-    background-size: contain;
-
-    background-position: center;
-  }
-  .land h1 {
-    font-size: 2em;
-  }
-  .land p {
-    font-size: 1em;
-  }
-  #get_started img {
-    width: 70%;
-  }
-}
 .or {
   height: 0;
   display: flex;
@@ -198,4 +176,26 @@ footer {
 
   text-align: center;
   padding: 1em;
+}
+
+@media (max-width: 480px) {
+  #get_started .content {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 10px;
+    background-size: contain;
+
+    background-position: center;
+  }
+  .land h1 {
+    font-size: 2em;
+  }
+  .land p {
+    font-size: 1em;
+  }
+  #get_started img {
+    width: 70%;
+  }
 }
