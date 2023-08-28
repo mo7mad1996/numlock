@@ -198,4 +198,7 @@ footer {
   #get_started img {
     width: 70%;
   }
+  #get_started #img_container {
+    width: 100%;
+  }
 }
