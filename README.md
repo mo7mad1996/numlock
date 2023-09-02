@@ -14,9 +14,9 @@ useing some npm packages like
 
     {
         "axios": "1.4.0",
-        "socket.io": "4.7.2"
+        "socket.io": "4.7.2",
         "express": "4.18.2",
         "body-parser": "1.20.2",
         "qrcode": "1.5.3",
-        "html5-qrcode": "2.3.8",
+        "html5-qrcode": "2.3.8"
     }

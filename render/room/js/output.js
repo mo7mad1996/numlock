@@ -6,6 +6,12 @@ socket.on("add text", (i) => {
     case "backspace":
       container.removeChild(container.lastElementChild);
       break;
+
+    case "copy":
+      cop();
+      container.innerHTML = "";
+      break;
+
     default:
       const span = document.createElement("span");
 
@@ -14,9 +20,8 @@ socket.on("add text", (i) => {
   }
 });
 
-document.body.addEventListener("copy", (e) => console.log(e));
-
 button.addEventListener("click", cop);
+
 function cop() {
   let text = container.innerText;
   button.classList.add("copy");
