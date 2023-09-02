@@ -8,8 +8,7 @@ socket.on("add text", (i) => {
       break;
 
     case "copy":
-      cop();
-      container.innerHTML = "";
+      cop(true);
       break;
 
     default:
@@ -22,9 +21,10 @@ socket.on("add text", (i) => {
 
 button.addEventListener("click", cop);
 
-function cop() {
+function cop(remove_content = false) {
   let text = container.innerText;
   button.classList.add("copy");
   navigator.clipboard.writeText(text);
   setTimeout(() => button.classList.remove("copy"), 2000);
+  if (remove_content) container.innerHTML = "";
 }
