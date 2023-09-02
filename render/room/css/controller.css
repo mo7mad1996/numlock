@@ -8,6 +8,7 @@
   padding: 0;
 }
 
+#copy_container,
 #backspace_container,
 #keys_container {
   width: min(340px, 100%);
@@ -27,6 +28,7 @@ body {
   background-color: #4d4d4d;
 }
 
+#copy_container,
 #backspace_container {
   flex: 1;
 }
