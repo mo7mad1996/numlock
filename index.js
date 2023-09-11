@@ -21,9 +21,18 @@ app.use(express.static("./"));
 app.use(express.static("render"));
 
 app.post("/get_room", (req, res) => {
-  QRCode.toDataURL(req.body.room, { width: 20 }, function (err, url) {
-    res.json({ url, room: req.body.room });
-  });
+  QRCode.toDataURL(
+    req.body.room,
+    {
+      width: 10,
+      version: 3,
+      scale: 20,
+      color: { light: "#f2fffd" },
+    },
+    function (err, url) {
+      res.json({ url, room: req.body.room });
+    }
+  );
 });
 
 app.get("/room/:event/:id", (req, res) => {
