@@ -25,7 +25,7 @@ app.post("/get_room", (req, res) => {
     req.body.room,
     {
       width: 10,
-      version: 3,
+      version: 2,
       scale: 20,
       color: { light: "#f2fffd" },
     },
