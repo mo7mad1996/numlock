@@ -89,6 +89,8 @@ section {
   background: #f2fffd;
   text-align: center;
   font-size: 2em;
+  display: flex;
+  align-items: center;
 
   font-family: "Jost", sans-serif;
 }
