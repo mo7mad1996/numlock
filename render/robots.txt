@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://numlock.onrender.com/sitemap.xml
