@@ -11,8 +11,8 @@ you will find the live project [here on this link](https://numlock.onrender.com/
 
 useing some npm packages like
 
----json
 
+---json
     {
         "axios": "1.4.0",
         "socket.io": "4.7.2",
