@@ -6,7 +6,7 @@ you will find the live project [here on this link](https://numlock.onrender.com/
 
 ![logo](https://numlock.onrender.com/imgs/9.jpg)
 
----
+---json
 
 **This project build by node**
 
