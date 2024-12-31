@@ -42,7 +42,10 @@ app.get("/room/:event/:id", (req, res) => {
 
 // io
 IO.on("connection", (socket) => {
-  socket.on("join room", (room) => socket.join(room));
+  socket.on("join room", (room) => {
+    socket.join(room)
+    socket.broadcast.to(room).emit("go to output", room)
+  });
   socket.on("go to output", (room, cb) => {
     IO.to(room).emit("go to output", room);
     if (cb) {
