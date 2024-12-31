@@ -25,7 +25,7 @@ app.post("/get_room", (req, res) => {
     `https://numlock.onrender.com/room/controller/${req.body.room}`,
     {
       width: 10,
-      version: 2,
+      version: 6,
       scale: 20,
       color: { light: "#f2fffd" },
     },
