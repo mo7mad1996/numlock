@@ -6,7 +6,7 @@ const room = url.split("/")[url.split("/").length - 1];
 
   sound.play();
   socket.emit("go to output", room, (_) => {
-    window.location.href(`${url}`);
+    location.replace(`${url}`);
   });
   scaner.clear();
 });
