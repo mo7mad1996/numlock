@@ -30,6 +30,7 @@ app.post("/get_room", (req, res) => {
       color: { light: "#f2fffd" },
     },
     function (err, url) {
+      if(err)     res.status(500).json({ error: 'Failed to generate QR code', err });
       res.json({ url, room: req.body.room });
     }
   );
