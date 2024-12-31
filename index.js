@@ -21,8 +21,8 @@ app.use(express.static("./"));
 app.use(express.static("render"));
 
 app.post("/get_room", (req, res) => {
-  QRCode.toDataURL(
-     "https://numlock.onrender.com/room/controller/"+ req.body.room,
+  QRCode.toDataURL(  
+    `https://numlock.onrender.com/room/controller/${req.body.room}`,
     {
       width: 10,
       version: 2,
